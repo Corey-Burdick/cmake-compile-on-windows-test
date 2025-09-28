@@ -3,9 +3,10 @@
 int main() {
  
   const char *message = "If you see this, it worked.";
-
+  Image icon = LoadImage("assets/graphics/Heart-Icon.png");
   InitWindow(500, 500, "Test");
   SetTargetFPS(60);
+  SetWindowIcon(icon);
 
   Font font = GetFontDefault();
 
